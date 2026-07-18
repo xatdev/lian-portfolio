@@ -1,0 +1,37 @@
+import type { Metadata } from "next";
+import { Manrope, Syne } from "next/font/google";
+import "./globals.css";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+
+const manrope = Manrope({
+  variable: "--font-body",
+  subsets: ["latin"],
+});
+
+const syne = Syne({
+  variable: "--font-display",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Lian | Product Design Portfolio",
+  description:
+    "Portfolio of Lian, a B.Des Product Design student building thoughtful, human-centered products.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${manrope.variable} ${syne.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-ink text-sand">
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
+    </html>
+  );
+}
