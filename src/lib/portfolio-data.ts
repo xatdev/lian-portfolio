@@ -98,7 +98,6 @@ export const projects: Project[] = [
       "/images/portfolio/page-18.png",
       "/images/portfolio/page-19.png",
       "/images/portfolio/page-20.png",
-      "/images/portfolio/page-21.png",
     ],
   },
 ];
