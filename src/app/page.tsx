@@ -1,13 +1,26 @@
 import { AnimatedReveal } from "@/components/animated-reveal";
 import { ProjectCard } from "@/components/project-card";
 import { projects } from "@/lib/portfolio-data";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <section className="relative flex h-[calc(100svh-73px)] min-h-[420px] w-full items-center overflow-hidden border-b border-line/70 bg-[#5b5b5d]">
-        <AnimatedReveal className="mx-auto w-full max-w-6xl px-6 md:px-8">
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[52vw] min-w-[280px] max-w-[720px] opacity-35">
+          <Image
+            src="/images/lian-background.png"
+            alt="Lian Lijo portrait"
+            fill
+            priority
+            sizes="(max-width: 768px) 70vw, 52vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#5b5b5d]/35 to-[#5b5b5d]" />
+        </div>
+
+        <AnimatedReveal className="relative z-10 mx-auto w-full max-w-6xl px-6 md:px-8">
           <div className="max-w-4xl space-y-6">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/95">Product Design</p>
             <h1 className="display text-6xl font-semibold leading-[0.9] text-[#ff643a] sm:text-7xl md:text-8xl lg:text-[10rem]">
@@ -21,7 +34,7 @@ export default function Home() {
             </p>
           </div>
         </AnimatedReveal>
-        <p className="absolute bottom-10 right-6 origin-bottom-right -rotate-90 text-sm font-semibold tracking-[0.03em] text-white/95 md:right-8 md:text-base">
+        <p className="absolute bottom-10 right-6 z-10 origin-bottom-right -rotate-90 text-sm font-semibold tracking-[0.03em] text-white/95 md:right-8 md:text-base">
           lian.lijo@gmail.com
         </p>
       </section>
