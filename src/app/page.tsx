@@ -7,15 +7,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative w-full overflow-hidden border-b border-line/70">
-        <AnimatedReveal className="relative aspect-[16/10] w-full">
+      <section className="relative h-[calc(100svh-73px)] min-h-[420px] w-full overflow-hidden border-b border-line/70 bg-panel/55">
+        <AnimatedReveal className="relative h-full w-full">
           <Image
             src="/images/portfolio/page-01.png"
             alt="Lian portfolio cover"
             fill
             priority
             sizes="100vw"
-            className="object-contain"
+            className="object-contain object-center"
           />
         </AnimatedReveal>
       </section>
