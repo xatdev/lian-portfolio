@@ -28,7 +28,7 @@ export default function AboutPage() {
         </p>
 
         <div className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sand/70">Skills</p>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#ff643a]">Skills</p>
           <div className="grid gap-4 sm:grid-cols-2">
           {[
             "Human-centered research",
@@ -38,7 +38,7 @@ export default function AboutPage() {
             "3D modelling and rendering (Rhino)",
             "Adobe Creative Suite",
           ].map((skill) => (
-            <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 text-sand/84">
+            <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 font-bold text-[#ff643a]">
               {skill}
             </div>
           ))}
