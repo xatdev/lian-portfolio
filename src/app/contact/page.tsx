@@ -25,6 +25,7 @@ export default function ContactPage() {
         >
           LinkedIn profile
         </Link>
+        <p className="text-sand/84">Phone: +91 98453 54607</p>
       </AnimatedReveal>
     </section>
   );
