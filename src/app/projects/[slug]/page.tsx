@@ -15,7 +15,7 @@ export default async function ProjectDetailPage({
 }) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
-  const isAmbientCorkLamp = slug === "ambient-cork-lamp";
+  const usesFullPageImages = slug === "ambient-cork-lamp" || slug === "mycocradle";
 
   if (!project) {
     notFound();
@@ -30,7 +30,7 @@ export default async function ProjectDetailPage({
           fill
           priority
           sizes="100vw"
-          className={isAmbientCorkLamp ? "object-contain" : "object-cover"}
+          className={usesFullPageImages ? "object-contain" : "object-cover"}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-6xl px-6 pb-10 md:px-8">
@@ -71,7 +71,7 @@ export default async function ProjectDetailPage({
             key={image}
             delay={index * 0.05}
             className={
-              isAmbientCorkLamp
+              usesFullPageImages
                 ? "relative h-[58vh] min-h-[420px] overflow-hidden rounded-3xl border border-line/70 bg-panel/45"
                 : "relative aspect-[4/3] overflow-hidden rounded-3xl border border-line/70"
             }
@@ -81,7 +81,7 @@ export default async function ProjectDetailPage({
               alt={`${project.title} visual ${index + 2}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className={isAmbientCorkLamp ? "object-contain" : "object-cover"}
+              className={usesFullPageImages ? "object-contain" : "object-cover"}
             />
           </AnimatedReveal>
         ))}
