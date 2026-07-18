@@ -34,9 +34,6 @@ export default function Home() {
             </p>
           </div>
         </AnimatedReveal>
-        <p className="absolute bottom-10 right-6 z-10 origin-bottom-right -rotate-90 text-sm font-semibold tracking-[0.03em] text-white/95 md:right-8 md:text-base">
-          lian.lijo@gmail.com
-        </p>
       </section>
 
       <section className="mx-auto w-full max-w-6xl space-y-8 px-6 py-14 md:px-8 md:py-20">
