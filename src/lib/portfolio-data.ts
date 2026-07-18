@@ -50,10 +50,8 @@ export const projects: Project[] = [
       "Demonstrates systems-level design maturity and a clear direction for circular product ecosystems.",
     accent: "coral",
     images: [
-      "/images/portfolio/page-06.png",
       "/images/portfolio/page-07.png",
       "/images/portfolio/page-08.png",
-      "/images/portfolio/page-09.png",
     ],
   },
   {
