@@ -19,7 +19,7 @@ export default function ProcessPage() {
           <AnimatedReveal
             key={step.title}
             delay={index * 0.07}
-            className="rounded-3xl border border-line/70 bg-white/5 p-6 md:p-7"
+            className="rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-7"
           >
             <p className="text-sm text-sand/68">0{index + 1}</p>
             <h2 className="display mt-2 text-3xl">{step.title}</h2>

@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Manrope, Syne } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const manrope = Manrope({
+const cormorantBody = Cormorant_Garamond({
   variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const syne = Syne({
+const cormorantDisplay = Cormorant_Garamond({
   variable: "--font-display",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -26,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${syne.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${cormorantBody.variable} ${cormorantDisplay.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-ink text-sand">
         <SiteHeader />
         {children}

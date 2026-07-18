@@ -18,7 +18,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/70 bg-ink/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-line/90 bg-ink/90 backdrop-blur-xl">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-8">
         <Link href="/" className="display text-2xl tracking-tight" onClick={() => setOpen(false)}>
           Lian
@@ -26,7 +26,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-full border border-line px-4 py-2 text-sm md:hidden"
+          className="rounded-full border border-line bg-panel px-4 py-2 text-sm md:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
         >
@@ -40,7 +40,7 @@ export function SiteHeader() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-sm transition ${active ? "text-mint" : "text-sand/80 hover:text-sand"}`}
+                  className={`text-sm transition ${active ? "text-mint" : "text-sand/72 hover:text-sand"}`}
                 >
                   {link.label}
                 </Link>
@@ -64,7 +64,7 @@ export function SiteHeader() {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className={`block rounded-xl px-3 py-2 ${pathname === link.href ? "bg-mint/20 text-mint" : "text-sand/85"}`}
+                    className={`block rounded-xl px-3 py-2 ${pathname === link.href ? "bg-panel text-mint" : "text-sand/80"}`}
                   >
                     {link.label}
                   </Link>

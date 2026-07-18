@@ -40,24 +40,24 @@ export default async function ProjectDetailPage({
       </div>
 
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-12 md:grid-cols-[0.9fr_1.1fr] md:px-8 md:py-16">
-        <AnimatedReveal className="space-y-6 rounded-3xl border border-line/70 bg-white/5 p-6 md:p-7">
+        <AnimatedReveal className="space-y-6 rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-7">
           <p className="text-sm text-sand/70">Year: {project.year}</p>
           <p className="text-base leading-relaxed text-sand/84">{project.overview}</p>
-          <Link href="/projects" className="inline-flex text-sm text-mint hover:text-sand">
+          <Link href="/projects" className="inline-flex text-sm text-mint hover:text-sand/80">
             Back to projects
           </Link>
         </AnimatedReveal>
 
         <AnimatedReveal delay={0.08} className="grid gap-5">
-          <article className="rounded-3xl border border-line/70 bg-white/5 p-6 md:p-7">
+          <article className="rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-7">
             <h2 className="display text-3xl">Challenge</h2>
             <p className="mt-3 text-sand/82">{project.challenge}</p>
           </article>
-          <article className="rounded-3xl border border-line/70 bg-white/5 p-6 md:p-7">
+          <article className="rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-7">
             <h2 className="display text-3xl">Solution</h2>
             <p className="mt-3 text-sand/82">{project.solution}</p>
           </article>
-          <article className="rounded-3xl border border-line/70 bg-white/5 p-6 md:p-7">
+          <article className="rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-7">
             <h2 className="display text-3xl">Impact</h2>
             <p className="mt-3 text-sand/82">{project.impact}</p>
           </article>

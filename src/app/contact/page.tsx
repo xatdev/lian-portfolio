@@ -13,7 +13,7 @@ export default function ContactPage() {
         </p>
       </AnimatedReveal>
 
-      <AnimatedReveal delay={0.1} className="space-y-4 rounded-3xl border border-line/70 bg-white/5 p-6 md:p-8">
+      <AnimatedReveal delay={0.1} className="space-y-4 rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-8">
         <p className="text-sm text-sand/68">Reach me at</p>
         <Link href="mailto:lian.design@gmail.com" className="display text-2xl text-mint md:text-3xl">
           lian.design@gmail.com

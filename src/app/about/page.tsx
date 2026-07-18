@@ -34,7 +34,7 @@ export default function AboutPage() {
             "Sustainable material exploration",
             "Visual storytelling and presentation",
           ].map((skill) => (
-            <div key={skill} className="rounded-2xl border border-line/70 bg-white/5 p-4 text-sand/84">
+            <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 text-sand/84">
               {skill}
             </div>
           ))}

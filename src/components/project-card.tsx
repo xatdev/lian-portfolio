@@ -6,10 +6,10 @@ import Link from "next/link";
 import type { Project } from "@/lib/portfolio-data";
 
 const accentMap = {
-  mint: "from-mint/35 to-transparent",
-  coral: "from-coral/35 to-transparent",
-  sun: "from-sun/40 to-transparent",
-  teal: "from-teal/35 to-transparent",
+  mint: "from-sand/18 to-transparent",
+  coral: "from-sand/16 to-transparent",
+  sun: "from-sand/14 to-transparent",
+  teal: "from-sand/15 to-transparent",
 };
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -23,7 +23,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     >
       <Link
         href={`/projects/${project.slug}`}
-        className="relative block overflow-hidden rounded-3xl border border-line/60 bg-white/5"
+        className="relative block overflow-hidden rounded-3xl border border-line/90 bg-panel/70"
       >
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image

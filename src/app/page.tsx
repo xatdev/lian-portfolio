@@ -27,7 +27,7 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.2em] text-sand/70">Featured Projects</p>
               <h2 className="display text-4xl md:text-5xl">Selected Work</h2>
             </div>
-            <Link href="/projects" className="text-sm text-mint hover:text-sand">
+            <Link href="/projects" className="text-sm text-mint hover:text-sand/80">
               See all projects
             </Link>
           </div>
