@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #545454;
-  --sand: #f4f4f4;
-  --mint: #d9d9d9;
-  --coral: #c8c8c8;
-  --sun: #bdbdbd;
-  --teal: #d0d0d0;
-  --panel: #626262;
-  --line: rgba(255, 255, 255, 0.2);
+  --ink: #f4f0e6;
+  --sand: #282520;
+  --mint: #7a6a55;
+  --coral: #8f8574;
+  --sun: #a09078;
+  --teal: #978c7b;
+  --panel: #ece6d8;
+  --line: rgba(40, 37, 32, 0.16);
 }
 
 @theme inline {
@@ -20,8 +20,8 @@
   --color-teal: var(--teal);
   --color-panel: var(--panel);
   --color-line: var(--line);
-  --font-sans: Helvetica, Arial, sans-serif;
-  --font-display: Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
 * {
@@ -31,8 +31,7 @@
 body {
   background: var(--ink);
   color: var(--sand);
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-body), "Times New Roman", serif;
   overflow-x: clip;
 }
 
@@ -41,32 +40,14 @@ a {
 }
 
 .display {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-button,
-input,
-textarea,
-select,
-li,
-span {
-  font-weight: 400;
+  font-family: var(--font-display), "Times New Roman", serif;
+  letter-spacing: -0.01em;
 }
 
 .grid-bg {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(40, 37, 32, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(40, 37, 32, 0.06) 1px, transparent 1px);
   background-size: 34px 34px;
 }
 
