@@ -70,7 +70,6 @@ export const projects: Project[] = [
       "Improves confidence and comfort for frequent-use scenarios with minimal manufacturing disruption.",
     accent: "sun",
     images: [
-      "/images/portfolio/page-10.png",
       "/images/portfolio/page-11.png",
       "/images/portfolio/page-12.png",
       "/images/portfolio/page-14.png",
