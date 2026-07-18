@@ -15,6 +15,7 @@ export default async function ProjectDetailPage({
 }) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
+  const isAmbientCorkLamp = slug === "ambient-cork-lamp";
 
   if (!project) {
     notFound();
@@ -22,14 +23,14 @@ export default async function ProjectDetailPage({
 
   return (
     <section className="pb-12">
-      <div className="relative h-[62vh] min-h-[430px] overflow-hidden border-b border-line/70">
+      <div className="relative h-[62vh] min-h-[430px] overflow-hidden border-b border-line/70 bg-panel/45">
         <Image
           src={project.images[0]}
           alt={project.title}
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className={isAmbientCorkLamp ? "object-contain" : "object-cover"}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-6xl px-6 pb-10 md:px-8">
@@ -66,13 +67,21 @@ export default async function ProjectDetailPage({
 
       <div className="mx-auto grid w-full max-w-6xl gap-5 px-6 md:grid-cols-2 md:px-8">
         {project.images.slice(1).map((image, index) => (
-          <AnimatedReveal key={image} delay={index * 0.05} className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-line/70">
+          <AnimatedReveal
+            key={image}
+            delay={index * 0.05}
+            className={
+              isAmbientCorkLamp
+                ? "relative h-[58vh] min-h-[420px] overflow-hidden rounded-3xl border border-line/70 bg-panel/45"
+                : "relative aspect-[4/3] overflow-hidden rounded-3xl border border-line/70"
+            }
+          >
             <Image
               src={image}
               alt={`${project.title} visual ${index + 2}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className={isAmbientCorkLamp ? "object-contain" : "object-cover"}
             />
           </AnimatedReveal>
         ))}
