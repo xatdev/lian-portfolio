@@ -1,22 +1,35 @@
 import { AnimatedReveal } from "@/components/animated-reveal";
 import { ProjectCard } from "@/components/project-card";
 import { projects } from "@/lib/portfolio-data";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <section className="relative h-[calc(100svh-73px)] min-h-[420px] w-full overflow-hidden border-b border-line/70 bg-panel/55">
-        <AnimatedReveal className="relative h-full w-full">
-          <Image
-            src="/images/portfolio/page-01.png"
-            alt="Lian portfolio cover"
-            fill
-            priority
-            sizes="100vw"
-            className="object-contain object-center"
-          />
+      <section className="relative flex h-[calc(100svh-73px)] min-h-[420px] w-full items-center overflow-hidden border-b border-line/70 bg-panel/55">
+        <AnimatedReveal className="mx-auto w-full max-w-6xl px-6 md:px-8">
+          <div className="max-w-4xl space-y-6">
+            <p className="text-sm uppercase tracking-[0.24em] text-sand/65">Product Design Portfolio</p>
+            <h1 className="display text-6xl leading-[0.95] text-sand sm:text-7xl md:text-8xl">Lian&apos;s Portfolio</h1>
+            <p className="max-w-2xl text-base leading-relaxed text-sand/80 md:text-lg">
+              A curated body of product design work exploring sustainability, material innovation, and human-centered
+              experiences.
+            </p>
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Link
+                href="/projects"
+                className="rounded-full border border-line bg-ink px-6 py-3 text-sm text-sand transition hover:bg-sand hover:text-ink"
+              >
+                View Projects
+              </Link>
+              <Link
+                href="/about"
+                className="rounded-full border border-line px-6 py-3 text-sm text-sand/82 transition hover:border-sand hover:text-sand"
+              >
+                About Lian Lijo
+              </Link>
+            </div>
+          </div>
         </AnimatedReveal>
       </section>
 
