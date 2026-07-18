@@ -78,42 +78,23 @@ export const projects: Project[] = [
   },
   {
     slug: "graphic-design",
-    title: "Graphic Design",
-    subtitle: "Visual identity and communication",
-    year: "2025",
-    category: "Communication Design",
+    title: "Others",
+    subtitle: "Graphic design and form explorations",
+    year: "2024-2025",
+    category: "Creative Explorations",
     overview:
-      "A collection of brand, editorial, and visual communication explorations that support product storytelling.",
+      "A combined collection of graphic design work and form studies that explores visual communication, experimentation, and three-dimensional thinking.",
     challenge:
-      "Create consistent yet expressive visual systems across varied formats and narrative contexts.",
+      "Bring together varied creative outputs while maintaining a clear narrative across branding, visual storytelling, and object form exploration.",
     solution:
-      "Developed modular compositions, bold typographic hierarchy, and adaptive color systems to unify outputs.",
+      "Grouped graphic communication work with iterative form studies to show both two-dimensional expression and three-dimensional development in one place.",
     impact:
-      "Strengthens cross-disciplinary capability between product thinking and visual communication.",
+      "Highlights a broader creative range, connecting visual identity, experimentation, and form-making within a single body of work.",
     accent: "teal",
     images: [
-      "/images/portfolio/page-14.png",
       "/images/portfolio/page-15.png",
       "/images/portfolio/page-16.png",
       "/images/portfolio/page-17.png",
-    ],
-  },
-  {
-    slug: "form-studies",
-    title: "Form Studies",
-    subtitle: "Spatial and object experimentation",
-    year: "2024-2026",
-    category: "Form Exploration",
-    overview:
-      "A process archive of sketch, model, and proportion studies used to sharpen three-dimensional decision making.",
-    challenge:
-      "Build disciplined form language while experimenting with scale, silhouette, and tactile qualities.",
-    solution:
-      "Iterative physical and digital studies mapped into comparative matrices for faster design judgments.",
-    impact:
-      "Acts as the foundation for confident concept development across future product directions.",
-    accent: "mint",
-    images: [
       "/images/portfolio/page-18.png",
       "/images/portfolio/page-19.png",
       "/images/portfolio/page-20.png",
