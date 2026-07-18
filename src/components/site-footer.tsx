@@ -9,7 +9,11 @@ export function SiteFooter() {
           <Link href="mailto:lian.design@gmail.com" className="hover:text-mint">
             Email
           </Link>
-          <Link href="https://www.linkedin.com" target="_blank" className="hover:text-mint">
+          <Link
+            href="https://www.linkedin.com/in/lian-lijo-655898321/"
+            target="_blank"
+            className="hover:text-mint"
+          >
             LinkedIn
           </Link>
           <Link href="/contact" className="hover:text-mint">

@@ -18,7 +18,11 @@ export default function ContactPage() {
         <Link href="mailto:lian.design@gmail.com" className="display text-2xl text-mint md:text-3xl">
           lian.design@gmail.com
         </Link>
-        <Link href="https://www.linkedin.com" target="_blank" className="inline-flex text-sand/84 hover:text-sand">
+        <Link
+          href="https://www.linkedin.com/in/lian-lijo-655898321/"
+          target="_blank"
+          className="inline-flex text-sand/84 hover:text-sand"
+        >
           LinkedIn profile
         </Link>
         <Link href="/projects" className="inline-flex text-sand/84 hover:text-sand">
