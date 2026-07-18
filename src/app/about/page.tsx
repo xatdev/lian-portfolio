@@ -35,7 +35,7 @@ export default function AboutPage() {
             "Concept and form development",
             "Sustainable material exploration",
             "Visual storytelling and presentation",
-            "3D modelling and rendering (Rhino)",
+            "3D modelling and rendering",
             "Adobe Creative Suite",
           ].map((skill) => (
             <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 font-bold text-sand">
