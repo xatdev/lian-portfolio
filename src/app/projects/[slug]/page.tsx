@@ -15,7 +15,6 @@ export default async function ProjectDetailPage({
 }) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
-  const isAmbientCorkLamp = slug === "ambient-cork-lamp";
 
   if (!project) {
     notFound();
@@ -30,7 +29,7 @@ export default async function ProjectDetailPage({
           fill
           priority
           sizes="100vw"
-          className={isAmbientCorkLamp ? "object-cover object-[78%_58%]" : "object-cover"}
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-6xl px-6 pb-10 md:px-8">

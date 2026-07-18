@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "Delivers a memorable tabletop product language that communicates eco-consciousness without looking utilitarian.",
     accent: "mint",
     images: [
-        "/images/portfolio/page-04.png",
+      "/images/portfolio/page-04-lamp-closeup.png",
       "/images/portfolio/page-03.png",
         "/images/portfolio/page-02.png",
       "/images/portfolio/page-05.png",
