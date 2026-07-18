@@ -1,22 +1,22 @@
 import { AnimatedReveal } from "@/components/animated-reveal";
 import { ProjectCard } from "@/components/project-card";
 import { projects } from "@/lib/portfolio-data";
-import Image from "next/image";
+import { Archivo_Black } from "next/font/google";
 import Link from "next/link";
+
+const archivoBlack = Archivo_Black({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
     <>
-      <section className="relative h-[calc(100svh-73px)] min-h-[420px] w-full overflow-hidden border-b border-line/70 bg-panel/55">
-        <AnimatedReveal className="relative h-full w-full">
-          <Image
-            src="/images/portfolio/page-01.png"
-            alt="Lian portfolio cover"
-            fill
-            priority
-            sizes="100vw"
-            className="object-contain object-center"
-          />
+      <section className="relative flex h-[calc(100svh-73px)] min-h-[420px] w-full items-center justify-center border-b border-line/70 bg-ink px-6">
+        <AnimatedReveal className="text-center">
+          <h1 className={`${archivoBlack.className} text-5xl leading-none text-sand sm:text-7xl md:text-8xl lg:text-[7rem]`}>
+            Lian&apos;s Portfolio
+          </h1>
         </AnimatedReveal>
       </section>
 
