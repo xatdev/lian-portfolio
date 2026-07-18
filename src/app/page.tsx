@@ -7,20 +7,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative flex h-[calc(100svh-73px)] min-h-[420px] w-full items-center justify-center overflow-hidden border-b border-line/70 bg-ink px-6">
-        <Image
-          src="/images/lian-background.png"
-          alt="Lian portrait background"
-          fill
-          priority
-          sizes="100vw"
-          className="pointer-events-none object-cover object-center opacity-30 saturate-75"
-        />
-        <div className="absolute inset-0 bg-ink/25" />
-        <AnimatedReveal className="relative z-10 text-center">
-          <h1 className="text-5xl font-semibold leading-none text-sand sm:text-7xl md:text-8xl lg:text-[7rem]">
-            Lian&apos;s Portfolio
-          </h1>
+      <section className="relative h-[calc(100svh-73px)] min-h-[420px] w-full overflow-hidden border-b border-line/70 bg-panel/55">
+        <AnimatedReveal className="relative h-full w-full">
+          <Image
+            src="/images/portfolio/page-01.png"
+            alt="Lian portfolio cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-contain object-center"
+          />
         </AnimatedReveal>
       </section>
 
