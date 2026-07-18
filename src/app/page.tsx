@@ -7,42 +7,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative grid-bg overflow-hidden border-b border-line/70">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:items-end md:px-8 md:py-20">
-          <AnimatedReveal className="space-y-8">
-            <p className="text-sm uppercase tracking-[0.2em] text-sand/70">B.Des Product Design Portfolio</p>
-            <h1 className="display text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
-              Lian builds <span className="gradient-text">vibrant, human-centered products</span> through storytelling.
-            </h1>
-            <p className="max-w-xl text-base leading-relaxed text-sand/80 md:text-lg">
-              A premium portfolio featuring selected studio and academic explorations across product design,
-              material experimentation, and visual communication.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/projects"
-                className="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition hover:translate-y-[-1px]"
-              >
-                View Projects
-              </Link>
-              <Link href="/contact" className="rounded-full border border-line px-6 py-3 text-sm hover:bg-white/8">
-                Contact Lian
-              </Link>
-            </div>
-          </AnimatedReveal>
-
-          <AnimatedReveal delay={0.12} className="relative aspect-video overflow-hidden rounded-3xl border border-line/70 bg-gray-700">
-            <Image
-              src="/images/portfolio/page-01.png"
-              alt="Lian portfolio cover"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 45vw"
-              className="object-contain"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
-          </AnimatedReveal>
-        </div>
+      <section className="relative w-full overflow-hidden border-b border-line/70">
+        <AnimatedReveal className="relative aspect-[16/10] w-full">
+          <Image
+            src="/images/portfolio/page-01.png"
+            alt="Lian portfolio cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-contain"
+          />
+        </AnimatedReveal>
       </section>
 
       <section className="mx-auto w-full max-w-6xl space-y-8 px-6 py-14 md:px-8 md:py-20">
