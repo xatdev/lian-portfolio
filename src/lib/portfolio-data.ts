@@ -30,8 +30,6 @@ export const projects: Project[] = [
     accent: "mint",
     images: [
       "/images/portfolio/page-04.png",
-      "/images/portfolio/page-03.png",
-      "/images/portfolio/page-02.png",
       "/images/portfolio/page-05.png",
     ],
   },
