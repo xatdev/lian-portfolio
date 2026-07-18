@@ -17,8 +17,8 @@ export default function AboutPage() {
       <AnimatedReveal delay={0.08} className="space-y-8">
         <div className="space-y-3">
           <p className="text-sm uppercase tracking-[0.2em] text-sand/70">About</p>
-          <h1 className="display text-5xl leading-tight text-[#ff643a] md:text-6xl">Lian Lijo</h1>
-          <p className="text-lg text-[#ff643a]">Product Design Student | B.Des</p>
+          <h1 className="display text-5xl leading-tight text-sand md:text-6xl">Lian Lijo</h1>
+          <p className="text-lg text-sand">Product Design Student | B.Des</p>
         </div>
 
         <p className="max-w-2xl text-base leading-relaxed text-sand/82 md:text-lg">
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </p>
 
         <div className="space-y-4">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#ff643a]">Skills</p>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-sand">Skills</p>
           <div className="grid gap-4 sm:grid-cols-2">
           {[
             "Human-centered research",
@@ -38,7 +38,7 @@ export default function AboutPage() {
             "3D modelling and rendering (Rhino)",
             "Adobe Creative Suite",
           ].map((skill) => (
-            <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 font-bold text-[#ff643a]">
+            <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 font-bold text-sand">
               {skill}
             </div>
           ))}
