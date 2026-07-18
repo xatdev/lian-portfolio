@@ -20,8 +20,8 @@
   --color-teal: var(--teal);
   --color-panel: var(--panel);
   --color-line: var(--line);
-  --font-sans: var(--font-body);
-  --font-display: var(--font-body);
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-display: Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -31,7 +31,8 @@
 body {
   background: var(--ink);
   color: var(--sand);
-  font-family: var(--font-body), sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
   overflow-x: clip;
 }
 
@@ -40,8 +41,26 @@ a {
 }
 
 .display {
-  font-family: var(--font-display), sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
   letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+textarea,
+select,
+li,
+span {
+  font-weight: 400;
 }
 
 .grid-bg {
