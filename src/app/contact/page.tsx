@@ -1,4 +1,5 @@
 import { AnimatedReveal } from "@/components/animated-reveal";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -13,18 +14,30 @@ export default function ContactPage() {
         </p>
       </AnimatedReveal>
 
-      <AnimatedReveal delay={0.1} className="space-y-4 rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-8">
-        <p className="text-sm text-sand/68">Reach me at</p>
-        <Link href="mailto:lian.lijo@gmail.com" className="block display text-2xl text-mint md:text-3xl">
-          lian.lijo@gmail.com
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/lian-lijo-655898321/"
-          target="_blank"
-          className="block text-sand/84 hover:text-sand"
-        >
-          LinkedIn profile
-        </Link>
+      <AnimatedReveal delay={0.1} className="space-y-6 rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-8">
+        <div className="relative -mx-6 -mt-6 h-56 w-[calc(100%+3rem)] overflow-hidden rounded-t-3xl md:h-64">
+          <Image
+            src="/images/lian-background.png"
+            alt="Lian portrait"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 45vw"
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="space-y-4">
+          <p className="text-sm text-sand/68">Reach me at</p>
+          <Link href="mailto:lian.lijo@gmail.com" className="block display text-2xl text-mint md:text-3xl">
+            lian.lijo@gmail.com
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/lian-lijo-655898321/"
+            target="_blank"
+            className="block text-sand/84 hover:text-sand"
+          >
+            LinkedIn profile
+          </Link>
+        </div>
       </AnimatedReveal>
     </section>
   );
