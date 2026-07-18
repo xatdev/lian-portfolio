@@ -6,11 +6,11 @@ export default function AboutPage() {
     <section className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-14 md:grid-cols-[0.95fr_1.05fr] md:px-8 md:py-20">
       <AnimatedReveal className="relative min-h-[460px] overflow-hidden rounded-3xl border border-line/70">
         <Image
-          src="/images/portfolio/page-01.png"
-          alt="Lian portrait and portfolio visual"
+          src="/images/lian-background.png"
+          alt="Lian portrait"
           fill
           sizes="(max-width: 768px) 100vw, 40vw"
-          className="object-cover"
+          className="object-cover object-center"
         />
       </AnimatedReveal>
 
