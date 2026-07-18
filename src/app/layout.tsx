@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 
 const archivoBlack = Archivo_Black({
   variable: "--font-body",
+  weight: "400",
   subsets: ["latin"],
 });
 
