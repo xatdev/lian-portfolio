@@ -31,14 +31,14 @@ export default function Home() {
             </div>
           </AnimatedReveal>
 
-          <AnimatedReveal delay={0.12} className="relative h-[420px] overflow-hidden rounded-3xl border border-line/70">
+          <AnimatedReveal delay={0.12} className="relative aspect-video overflow-hidden rounded-3xl border border-line/70 bg-gray-700">
             <Image
               src="/images/portfolio/page-01.png"
               alt="Lian portfolio cover"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 45vw"
-              className="object-cover"
+              className="object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
           </AnimatedReveal>
