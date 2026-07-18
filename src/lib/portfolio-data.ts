@@ -56,7 +56,7 @@ export const projects: Project[] = [
   },
   {
     slug: "water-jug-redesign",
-    title: "Water Jug Redesign",
+    title: "Kettle Redesign",
     subtitle: "Everyday usability refinement",
     year: "2025",
     category: "Human-Centered Design",
