@@ -31,6 +31,7 @@ export const projects: Project[] = [
     images: [
       "/images/portfolio/page-04.png",
       "/images/portfolio/page-05.png",
+      "/images/portfolio/page-06.png",
     ],
   },
   {
