@@ -15,18 +15,15 @@ export default function ContactPage() {
 
       <AnimatedReveal delay={0.1} className="space-y-4 rounded-3xl border border-line/80 bg-panel/70 p-6 md:p-8">
         <p className="text-sm text-sand/68">Reach me at</p>
-        <Link href="mailto:lian.design@gmail.com" className="display text-2xl text-mint md:text-3xl">
-          lian.design@gmail.com
+        <Link href="mailto:lian.lijo@gmail.com" className="block display text-2xl text-mint md:text-3xl">
+          lian.lijo@gmail.com
         </Link>
         <Link
           href="https://www.linkedin.com/in/lian-lijo-655898321/"
           target="_blank"
-          className="inline-flex text-sand/84 hover:text-sand"
+          className="block text-sand/84 hover:text-sand"
         >
           LinkedIn profile
-        </Link>
-        <Link href="/projects" className="inline-flex text-sand/84 hover:text-sand">
-          Browse project work
         </Link>
       </AnimatedReveal>
     </section>
