@@ -19,20 +19,6 @@ export default function Home() {
               A curated body of product design work exploring sustainability, material innovation, and human-centered
               experiences.
             </p>
-            <div className="flex flex-wrap gap-4 pt-2">
-              <Link
-                href="/projects"
-                className="rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm text-white transition hover:bg-white hover:text-[#4a4a4c]"
-              >
-                View Projects
-              </Link>
-              <Link
-                href="/about"
-                className="rounded-full border border-white/40 px-6 py-3 text-sm text-white/90 transition hover:border-white hover:text-white"
-              >
-                About Lian Lijo
-              </Link>
-            </div>
           </div>
         </AnimatedReveal>
         <p className="absolute bottom-10 right-6 origin-bottom-right -rotate-90 text-sm font-semibold tracking-[0.03em] text-white/95 md:right-8 md:text-base">
