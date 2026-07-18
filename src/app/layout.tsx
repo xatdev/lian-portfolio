@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lian | Product Design Portfolio",
+  title: "Lian Lijo | Product Design Portfolio",
   description:
-    "Portfolio of Lian, a B.Des Product Design student building thoughtful, human-centered products.",
+    "Portfolio of Lian Lijo, a B.Des Product Design student building thoughtful, human-centered products.",
 };
 
 export default function RootLayout({

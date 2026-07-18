@@ -21,7 +21,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-line/90 bg-ink/90 backdrop-blur-xl">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-8">
         <Link href="/" className="display text-2xl tracking-tight" onClick={() => setOpen(false)}>
-          Lian
+          Lian Lijo
         </Link>
         <button
           type="button"

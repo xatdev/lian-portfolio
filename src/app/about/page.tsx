@@ -17,7 +17,7 @@ export default function AboutPage() {
       <AnimatedReveal delay={0.08} className="space-y-8">
         <div className="space-y-3">
           <p className="text-sm uppercase tracking-[0.2em] text-sand/70">About</p>
-          <h1 className="display text-5xl leading-tight md:text-6xl">Lian</h1>
+          <h1 className="display text-5xl leading-tight md:text-6xl">Lian Lijo</h1>
           <p className="text-lg text-mint">Product Design Student | B.Des</p>
         </div>
 
