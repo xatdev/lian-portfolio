@@ -27,17 +27,22 @@ export default function AboutPage() {
           feel intuitive and emotionally resonant.
         </p>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="space-y-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sand/70">Skills</p>
+          <div className="grid gap-4 sm:grid-cols-2">
           {[
             "Human-centered research",
             "Concept and form development",
             "Sustainable material exploration",
             "Visual storytelling and presentation",
+            "3D modelling and rendering (Rhino)",
+            "Adobe Creative Suite",
           ].map((skill) => (
             <div key={skill} className="rounded-2xl border border-line/80 bg-panel/70 p-4 text-sand/84">
               {skill}
             </div>
           ))}
+          </div>
         </div>
 
         <p className="text-sand/76">
